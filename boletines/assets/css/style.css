@@ -1,13 +1,132 @@
-p {
-  color: red;
+/*
+rose: #c6426e;
+morado: #642B73;
+negro: #999;
+gris: #f5f5f5;
+*/
+
+.container {
+  background: #642b73;
+  background: -webkit-linear-gradient(to right, #c6426e, #642b73);
+  background: linear-gradient(to right, #c6426e, #642b73);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
 }
 
-.red {
-  background-color: red;
-  height: 200px;
-  width: 100px;
+.content {
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+
+  border-radius: 0.3em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  padding: 1.8em;
+
+  background-color: white;
 }
 
-#boton-pago {
-  background-color: yellow;
+.action {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close-span {
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #642b73;
+  color: white;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 50%;
+
+  font-weight: 300;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0.5em 0 0.5em;
+}
+
+.title-item {
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+
+  border-bottom: #c6426e solid 2px;
+  padding: 1em 0 0.6em;
+}
+
+.title-span {
+  background-color: #c6426e;
+  color: white;
+
+  margin: 0 0.5em 0 0;
+  padding: 0.3em;
+  border-radius: 0.25em;
+}
+
+.main-img {
+  float: left;
+  margin: 1em 1em 0 0;
+  width: 250px;
+}
+
+.address {
+  font-weight: bold;
+  font-size: 1.2em;
+
+  padding: 1em 0;
+  color: #642b73;
+}
+
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+.table {
+  width: 100%;
+}
+
+.td,
+.th {
+  padding: 1em;
+  text-align: left;
+}
+
+.tr:nth-child(even) {
+  background-color: #f3e5f5;
+}
+
+.fa-star {
+  color: #ffc400;
+}
+
+.a {
+  color: #d500f9;
+}
+
+.a:hover {
+  opacity: 0.8;
 }
